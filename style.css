@@ -9,23 +9,6 @@ body {
         padding: 0;
         /* Removes any default padding */
         margin: 0;
-        /* Removes any default margin */
-
-        font-family: Arial, sans-serif;  /* Sets the font to Arial, fallback to sans-serif */
-        line-height: 1.6;  /* Adjusts the line height for better readability */
-        color: #ffffff;  /* White text color for better contrast on dark backgrounds */
-        
-        /* Background settings */
-      
-        background: linear-gradient(to left, #052d3b, #183168e3, #0a0f71af);/* Fallback color for the background (dark blue) */
-      /* Prevents the background image from repeating */
-        background-position: center;  /* Centers the background image */
-        
-        /* Layout settings */
-        width: 100%;  /* Ensures the body takes up the full width of the viewport */
-        padding: 0;  /* Removes any default padding */
-        margin: 0;  /* Removes any default margin */
-        overflow: hidden;
     
     }
     main{
@@ -42,8 +25,8 @@ body {
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.067);
         display: none; /* Initially hidden */
-        overflow-y: auto; /* Enable scrolling only when content exceeds */
-        max-height: 80vh;
+        /* Enable scrolling only when content exceeds */
+       height: 100%;
     
     }
     
@@ -54,7 +37,9 @@ body {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-    
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     }
     
     .logo {
