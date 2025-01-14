@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Information</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pesponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/logo.jpeg" type="image/x-icon" id="v">
+</head>
+
+<body>
+    <nav>
+        <img src='assets/k-removebg-preview (1).png' class="logo">
+        <div class="search-bar">
+
+            <div class="inputDiv">
+                <input type="text" id="search" placeholder="Search for a word...">
+                <button id="cross"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <button id="serchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </nav>
+
+
+    <div class="welcome-message">
+        <h1>Welcome to Our Website!</h1>
+        <p>Explore and discover the meaning of any word you like. Just type and search!</p>
+    </div>
+
+
+
+
+    <div class="container">
+        <h1 id="word"></h1>
+        <div class="phonetics">
+            <h2>Phonetics</h2>
+            <p id="phonetic-text"></p>
+            <audio id="audio" controls></audio>
+        </div>
+        <div class="meanings">
+            <h2>Meanings</h2>
+            <div id="meanings"></div>
+        </div>
+        <div class="source">
+            <p>Source: <a id="source-url" href="#" target="_blank"></a></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>

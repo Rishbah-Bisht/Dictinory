@@ -1,0 +1,248 @@
+body {
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        background: linear-gradient(to left, #052d3b, #183168e3, #0a0f71af);
+        /* Fallback color for the background (dark blue) */
+    
+        width: 100%;
+        /* Ensures the body takes up the full width of the viewport */
+        padding: 0;
+        /* Removes any default padding */
+        margin: 0;
+        /* Removes any default margin */
+
+        font-family: Arial, sans-serif;  /* Sets the font to Arial, fallback to sans-serif */
+        line-height: 1.6;  /* Adjusts the line height for better readability */
+        color: #ffffff;  /* White text color for better contrast on dark backgrounds */
+        
+        /* Background settings */
+      
+        background: linear-gradient(to left, #052d3b, #183168e3, #0a0f71af);/* Fallback color for the background (dark blue) */
+      /* Prevents the background image from repeating */
+        background-position: center;  /* Centers the background image */
+        
+        /* Layout settings */
+        width: 100%;  /* Ensures the body takes up the full width of the viewport */
+        padding: 0;  /* Removes any default padding */
+        margin: 0;  /* Removes any default margin */
+        overflow: hidden;
+    
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        background: #000;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #28272789;
+        background-repeat: no-repeat;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.067);
+        display: none; /* Initially hidden */
+        overflow-y: auto; /* Enable scrolling only when content exceeds */
+        max-height: 80vh;
+    
+    }
+    
+    nav {
+        background-color: #000000;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    }
+    
+    .logo {
+        width: 100px;
+        height: 40px;
+        margin: 20px auto;
+    
+    }
+    
+    nav .search-bar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        /* Default to full width for smaller screens */
+        justify-content: center;
+    
+    }
+    
+    nav input[type="text"] {
+        padding: 5px 0 5px 20px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 3px;
+        flex: 1;
+    width: 300px;
+        /* Limit input size */
+        border-radius: 50px;
+        height: 40px;
+    }
+    nav input[type="text"]:focus {
+    
+        outline: none; /* Remove default outline */
+    }
+    #cross{
+        margin: 0;
+        width: 28px;
+        height: 35px;
+        background-color: transparent;
+        border: none;
+        position: relative;
+        right: 5px;
+        top:1px;
+        color: #2f2a2a;
+
+    }
+   #serchBtn {
+        font-size: 1rem;
+        background-color: #a0509c;
+        color: white;
+        height: 50px;
+        width: 50px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    
+    nav button:hover {
+        background-color: #7d00b3;
+    }
+    
+    
+    
+    h1 {
+        color: #bea82e;
+        /* Golden yellow color */
+    }
+    
+    /* Style for the first letter of <h1> */
+    h1::first-letter {
+        text-transform: uppercase;
+        /* Makes the first letter uppercase */
+    }
+    
+    /* Style for <h2> elements */
+    h2 {
+        color: #ffffff;
+        /* White color for headings */
+    }
+    
+    /* Style for <h3> elements */
+    h3 {
+        font-size: 1rem;
+        /* Sets the font size to 1rem */
+        text-decoration: underline;
+        /* Underlines the text */
+        color: #38c0b2;
+        /* Bright red color for h3 */
+    }
+    
+    /* Style for the first letter of <h3> */
+    h3::first-letter {
+        text-transform: uppercase;
+        /* Makes the first letter uppercase */
+    }
+    
+    /* Style for <strong> elements */
+    strong {
+        color: #66b1bb;
+        /* Light green color */
+    }
+    
+    /* Style for <p> elements */
+    p {
+        color: #ffffff;
+        /* White color for paragraphs */
+    }
+    
+    /* Styling for elements with the class "phonetics" and "meanings" */
+    .phonetics,
+    .meanings {
+        margin-top: 20px;
+        /* Adds space above these elements */
+    }
+    
+    /* Style for the <audio> tag inside the "phonetics" class */
+    .phonetics audio {
+        margin-top: 10px;
+        /* Adds space above audio elements */
+    }
+    
+    /* Style for <ul> elements inside the "meanings" class */
+    .meanings ul {
+        font-size: 1rem;
+        /* Sets font size to 1rem */
+        color: #ffffff;
+        /* White color for list items */
+    }
+    
+    .source {
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #777;
+        width: 100;
+    }
+    
+    #audio {
+        width: 100%;
+        /* Makes the audio player full width */
+        max-width: 300px;
+        /* Set a maximum width */
+        border-radius: 10px;
+        /* Rounded corners */
+    }
+    
+    
+    
+    
+    /* Style for the welcome message */
+    .welcome-message {
+        background-color: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 30px;
+        border-radius: 10px;
+        width: 70%;
+        margin: 100px auto;
+        opacity: 0;
+        /* Initially hidden */
+        transform: translateY(30px);
+        /* Initially moved down */
+        animation: fadeInSlideUp 1.5s forwards;
+        /* Animation applied */
+    }
+    
+    /* Animation for fade in and slide up */
+    @keyframes fadeInSlideUp {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+            /* Start from below */
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+            /* End at normal position */
+        }
+    }
+    
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+    
